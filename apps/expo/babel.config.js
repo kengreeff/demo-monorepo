@@ -1,4 +1,9 @@
+const path = require("path");
+
 module.exports = function (api) {
+  const envPath = path.resolve(__dirname, `../../`, `.env`);
+  require("dotenv").config({ path: envPath });
+
   api.cache(true);
   return {
     presets: [['babel-preset-expo', { jsxRuntime: 'automatic' }]],

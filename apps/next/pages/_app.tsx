@@ -3,6 +3,7 @@ import '@tamagui/font-inter/css/400.css'
 import '@tamagui/font-inter/css/700.css'
 import 'raf/polyfill'
 
+import { KindeProvider } from "@kinde-oss/kinde-auth-nextjs"
 import { NextThemeProvider, useRootTheme } from '@tamagui/next-theme'
 import { Provider } from 'app/provider'
 import Head from 'next/head'
@@ -21,9 +22,12 @@ function MyApp({ Component, pageProps }: SolitoAppProps) {
         <meta name="description" content="Tamagui, Solito, Expo & Next.js" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <ThemeProvider>
-        <Component {...pageProps} />
-      </ThemeProvider>
+
+      <KindeProvider>
+        <ThemeProvider>
+          <Component {...pageProps} />
+        </ThemeProvider>
+      </KindeProvider>
     </>
   )
 }
