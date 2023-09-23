@@ -3,6 +3,7 @@
     "strictNullChecks": true,
     "noUncheckedIndexedAccess": true,
     "paths": {
+      "@my/api/*": ["./packages/api/*"],
       "@my/ui/*": ["./packages/ui/*"],
       "app/*": ["./packages/app/*"]
     }

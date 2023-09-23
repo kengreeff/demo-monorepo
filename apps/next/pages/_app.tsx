@@ -10,6 +10,8 @@ import Head from 'next/head'
 import React from 'react'
 import type { SolitoAppProps } from 'solito'
 
+import { trpc } from 'app/utils/trpc.web'
+
 if (process.env.NODE_ENV === 'production') {
   require('../public/tamagui.css')
 }
@@ -48,4 +50,4 @@ function ThemeProvider({ children }: { children: React.ReactNode }) {
   )
 }
 
-export default MyApp
+export default trpc.withTRPC(MyApp)

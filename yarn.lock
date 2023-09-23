@@ -3365,6 +3365,23 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@kinde-oss/kinde-auth-nextjs@npm:^1.8.12":
+  version: 1.8.19
+  resolution: "@kinde-oss/kinde-auth-nextjs@npm:1.8.19"
+  dependencies:
+    "@kinde-oss/kinde-typescript-sdk": ^2.2.0
+    cookie: ^0.5.0
+    crypto: ^1.0.1
+    crypto-js: ^4.1.1
+    jwt-decode: ^3.1.2
+    simple-oauth2: ^4.3.0
+  peerDependencies:
+    react: ^18.1.0
+    react-dom: ^18.1.0
+  checksum: 4f2c9bb568bd52362042bdcd7e2f6d91cbc6b5180bb7a3635e550edd052a7fe3a437c0d3c57d206decb1665631a052fd495867fc2d1a4a10d118e2c750bc5b20
+  languageName: node
+  linkType: hard
+
 "@kinde-oss/kinde-auth-nextjs@npm:^1.8.18":
   version: 1.8.18
   resolution: "@kinde-oss/kinde-auth-nextjs@npm:1.8.18"
@@ -3378,6 +3395,15 @@ __metadata:
     react: ^18.1.0
     react-dom: ^18.1.0
   checksum: 49e9d3d21bb5c5d9a9c86eb5cc2191d24eeb9207b84a50bfc537f4098d4d0c177e552e2290cc2ccfa5ea95000b4a8da5b181d1fe4fe3e0880b7756e9a9cf8521
+  languageName: node
+  linkType: hard
+
+"@kinde-oss/kinde-typescript-sdk@npm:^2.2.0":
+  version: 2.2.0
+  resolution: "@kinde-oss/kinde-typescript-sdk@npm:2.2.0"
+  dependencies:
+    uncrypto: ^0.1.3
+  checksum: 6725eba01e67ed0d5ac71d62f25bc2a12eabadfa5fcfdc6c28ab6c9bad697ccfd996276768ef4dbbaf962be9a48a050d05122b6cb4b4bc3e40cd381027ce5cba
   languageName: node
   linkType: hard
 
@@ -3475,6 +3501,19 @@ __metadata:
   checksum: 1a98db05d955b74dad3814679593df293b9194853698f3f5f1ed00ecd93128cdd4b14fb8767fe44ac6981ef05c23effcfdc88710e7c1de99ccb6f647890597c8
   languageName: node
   linkType: hard
+
+"@my/api@workspace:packages/api":
+  version: 0.0.0-use.local
+  resolution: "@my/api@workspace:packages/api"
+  dependencies:
+    "@kinde-oss/kinde-auth-nextjs": ^1.8.12
+    "@trpc/client": 10.37.1
+    "@trpc/server": 10.37.1
+    aws-jwt-verify: ^4.0.0
+    superjson: ^1.13.1
+    zod: ^3.22.2
+  languageName: unknown
+  linkType: soft
 
 "@my/ui@0.0.1, @my/ui@workspace:packages/ui":
   version: 0.0.0-use.local
@@ -5486,6 +5525,32 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@tanstack/query-core@npm:4.35.3":
+  version: 4.35.3
+  resolution: "@tanstack/query-core@npm:4.35.3"
+  checksum: 0184cd19a26c4f96d05bbebd7966866741d46e5be19ac99d8cd6e5bbeb6550f257e7b52b674fb2673190696e113dd601422d196bf4870b58b4d2e2edf4307e92
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query@npm:^4.35.3":
+  version: 4.35.3
+  resolution: "@tanstack/react-query@npm:4.35.3"
+  dependencies:
+    "@tanstack/query-core": 4.35.3
+    use-sync-external-store: ^1.2.0
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
+    react-native: "*"
+  peerDependenciesMeta:
+    react-dom:
+      optional: true
+    react-native:
+      optional: true
+  checksum: 4d7e4e6a8466095848d2924fdbcd2d22a36b53e2d0f79a7dec121c8d7af36ff857b1bae5a7b802f3a399922c9c9f38f2a06372b1fc7b1d5de960e78fa1d3d722
+  languageName: node
+  linkType: hard
+
 "@tootallnate/once@npm:1":
   version: 1.1.2
   resolution: "@tootallnate/once@npm:1.1.2"
@@ -5497,6 +5562,52 @@ __metadata:
   version: 2.0.0
   resolution: "@tootallnate/once@npm:2.0.0"
   checksum: ad87447820dd3f24825d2d947ebc03072b20a42bfc96cbafec16bff8bbda6c1a81fcb0be56d5b21968560c5359a0af4038a68ba150c3e1694fe4c109a063bed8
+  languageName: node
+  linkType: hard
+
+"@trpc/client@npm:10.37.1":
+  version: 10.37.1
+  resolution: "@trpc/client@npm:10.37.1"
+  peerDependencies:
+    "@trpc/server": 10.37.1
+  checksum: 82fefed08717f7bf59a9013387c69a990de1d35c142519e1e8f29472cb8d16b6ce4d530d20d336e4a371993d93663e4ff7a86d1652a500a97e0632324df2e899
+  languageName: node
+  linkType: hard
+
+"@trpc/next@npm:^10.38.4":
+  version: 10.38.4
+  resolution: "@trpc/next@npm:10.38.4"
+  dependencies:
+    react-ssr-prepass: ^1.5.0
+  peerDependencies:
+    "@tanstack/react-query": ^4.18.0
+    "@trpc/client": 10.38.4
+    "@trpc/react-query": 10.38.4
+    "@trpc/server": 10.38.4
+    next: "*"
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 28d020d42221d69848a49038604d7e36e0b1bcc48b95ff794eb9787d1e0001e453477290e1020839c0080d1f5cfef33d27a6aaa84699eebfddcf01007d74138b
+  languageName: node
+  linkType: hard
+
+"@trpc/react-query@npm:^10.38.4":
+  version: 10.38.4
+  resolution: "@trpc/react-query@npm:10.38.4"
+  peerDependencies:
+    "@tanstack/react-query": ^4.18.0
+    "@trpc/client": 10.38.4
+    "@trpc/server": 10.38.4
+    react: ">=16.8.0"
+    react-dom: ">=16.8.0"
+  checksum: 4d6e58eb262322d46e326839564a96c5bff7847fefed9442c8544ef46d6af07d096613ff147b964760b1162fb13fea6ac08e16580169c156f12293cb626fb1cd
+  languageName: node
+  linkType: hard
+
+"@trpc/server@npm:10.37.1":
+  version: 10.37.1
+  resolution: "@trpc/server@npm:10.37.1"
+  checksum: 0945bc60e1966f57c5944451a9a24b9d565f50e125e71369882379e6580de4ed2e2575a78c474709876d5e2e849fe0e133658c045484a230158516f59f23d7d7
   languageName: node
   linkType: hard
 
@@ -6472,6 +6583,9 @@ __metadata:
     "@tamagui/lucide-icons": latest
     "@tamagui/shorthands": latest
     "@tamagui/themes": latest
+    "@tanstack/react-query": ^4.35.3
+    "@trpc/next": ^10.38.4
+    "@trpc/react-query": ^10.38.4
     "@types/react": ^18.0.27
     "@types/react-native": ^0.71.3
     burnt: ^0.11.0
@@ -6813,6 +6927,13 @@ __metadata:
   version: 1.0.5
   resolution: "available-typed-arrays@npm:1.0.5"
   checksum: 20eb47b3cefd7db027b9bbb993c658abd36d4edd3fe1060e83699a03ee275b0c9b216cc076ff3f2db29073225fb70e7613987af14269ac1fe2a19803ccc97f1a
+  languageName: node
+  linkType: hard
+
+"aws-jwt-verify@npm:^4.0.0":
+  version: 4.0.0
+  resolution: "aws-jwt-verify@npm:4.0.0"
+  checksum: 9c95829504b2ed9ec0b595f4e5f39e28c6fed3d494c32667f1382d10b80b4a0abe5f13450fff3d3522f4eb8e72508aa5e704012d2ea5f7637af34b04ad2f08d5
   languageName: node
   linkType: hard
 
@@ -8052,6 +8173,15 @@ __metadata:
   version: 2.1.4
   resolution: "cookiejar@npm:2.1.4"
   checksum: c4442111963077dc0e5672359956d6556a195d31cbb35b528356ce5f184922b99ac48245ac05ed86cf993f7df157c56da10ab3efdadfed79778a0d9b1b092d5b
+  languageName: node
+  linkType: hard
+
+"copy-anything@npm:^3.0.2":
+  version: 3.0.5
+  resolution: "copy-anything@npm:3.0.5"
+  dependencies:
+    is-what: ^4.1.8
+  checksum: d39f6601c16b7cbd81cdb1c1f40f2bf0f2ca0297601cf7bfbb4ef1d85374a6a89c559502329f5bada36604464df17623e111fe19a9bb0c3f6b1c92fe2cbe972f
   languageName: node
   linkType: hard
 
@@ -12741,6 +12871,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"is-what@npm:^4.1.8":
+  version: 4.1.15
+  resolution: "is-what@npm:4.1.15"
+  checksum: fe27f6cd4af41be59a60caf46ec09e3071bcc69b9b12a7c871c90f54360edb6d0bc7240cb944a251fb0afa3d35635d1cecea9e70709876b368a8285128d70a89
+  languageName: node
+  linkType: hard
+
 "is-windows@npm:^1.0.2":
   version: 1.0.2
   resolution: "is-windows@npm:1.0.2"
@@ -16977,6 +17114,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"react-ssr-prepass@npm:^1.5.0":
+  version: 1.5.0
+  resolution: "react-ssr-prepass@npm:1.5.0"
+  peerDependencies:
+    react: ^16.8.0 || ^17.0.0 || ^18.0.0
+  checksum: efe89b9f8b2053474613f56dfdbeb41d8ee2e572bf819a39377d95d3e4a9acf8a4a16e28d8d8034cb9ac2b316d11dc9e62217743e4322046d08175eb3b4fed3e
+  languageName: node
+  linkType: hard
+
 "react-style-singleton@npm:^2.2.1":
   version: 2.2.1
   resolution: "react-style-singleton@npm:2.2.1"
@@ -18685,6 +18831,15 @@ __metadata:
   languageName: node
   linkType: hard
 
+"superjson@npm:^1.13.1":
+  version: 1.13.1
+  resolution: "superjson@npm:1.13.1"
+  dependencies:
+    copy-anything: ^3.0.2
+  checksum: 9c8c664a924ce097250112428805ccc8b500018b31a91042e953d955108b8481c156005d836b413940c9fa5f124a3195f55f3a518fe76510a254a59f9151a204
+  languageName: node
+  linkType: hard
+
 "supports-color@npm:^5.3.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
@@ -19523,6 +19678,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"uncrypto@npm:^0.1.3":
+  version: 0.1.3
+  resolution: "uncrypto@npm:0.1.3"
+  checksum: 07160e08806dd6cea16bb96c3fd54cd70fc801e02fc3c6f86980144d15c9ebbd1c55587f7280a207b3af6cd34901c0d0b77ada5a02c2f7081a033a05acf409e2
+  languageName: node
+  linkType: hard
+
 "unicode-canonical-property-names-ecmascript@npm:^2.0.0":
   version: 2.0.0
   resolution: "unicode-canonical-property-names-ecmascript@npm:2.0.0"
@@ -19879,7 +20041,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:1.2.0, use-sync-external-store@npm:^1.0.0":
+"use-sync-external-store@npm:1.2.0, use-sync-external-store@npm:^1.0.0, use-sync-external-store@npm:^1.2.0":
   version: 1.2.0
   resolution: "use-sync-external-store@npm:1.2.0"
   peerDependencies:
@@ -20574,6 +20736,13 @@ __metadata:
   version: 3.21.4
   resolution: "zod@npm:3.21.4"
   checksum: f185ba87342ff16f7a06686767c2b2a7af41110c7edf7c1974095d8db7a73792696bcb4a00853de0d2edeb34a5b2ea6a55871bc864227dace682a0a28de33e1f
+  languageName: node
+  linkType: hard
+
+"zod@npm:^3.22.2":
+  version: 3.22.2
+  resolution: "zod@npm:3.22.2"
+  checksum: 231e2180c8eabb56e88680d80baff5cf6cbe6d64df3c44c50ebe52f73081ecd0229b1c7215b9552537f537a36d9e36afac2737ddd86dc14e3519bdbc777e82b9
   languageName: node
   linkType: hard
 

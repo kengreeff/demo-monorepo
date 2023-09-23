@@ -1,0 +1,13 @@
+{
+    "name": "@my/api",
+    "version": "0.0.0",
+    "types": "./index.ts",
+    "dependencies": {
+        "@kinde-oss/kinde-auth-nextjs": "^1.8.12",
+        "@trpc/client": "10.37.1",
+        "@trpc/server": "10.37.1",
+        "aws-jwt-verify": "^4.0.0",
+        "superjson": "^1.13.1",
+        "zod": "^3.22.2"
+    }
+}
